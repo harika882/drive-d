@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <ul class="navbar navbar-left">
+                <li><a class="navbar-brand" href="#">Home</a> </li>
+                <li><a href="/admin login/">Admin Login</a></li>
+            </ul>
+            <ul class="navbar navbar-Right">
+                <li><a class="navbar-brand" href="#">Cart:<b>({{cart_items}}) Items
+                </b></a> </li>
+                <li><a href="/cart checkout/">Checkout</a></li>
+            </ul>
+        </nav>
+        <br><br><br>
+        <div class="page-header" style="text-align:center"><h2>StoreName</h2></div>
+        <div class="row">
+            {% for product in store_items %}
+            <div class="col-md-4 well" style="text-align:center">
+                <b>{{product.Name}}</b>
+                <br>
+                <p>{{product.description}}</p>
+                <br>
+                <b>{{product.imglink}}</b>
+                <br>
+                <span class="label label-primary">{{product.price}}</span>
+                <br>
+                <br>
+            </div>
+            {% endfor %}
+        </div>
+
+</body>
+</html>

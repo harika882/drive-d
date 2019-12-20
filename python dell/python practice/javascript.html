@@ -1,0 +1,50 @@
+<html>
+<body>
+
+
+
+<h1 id="demo1">Java Script can change the HTML content</h1>
+<button type="button" onclick="document.getElementById('demo1').innerHTML='hello JavaScript!'">click Me</button>
+
+
+
+
+
+<p id="demo"></p>
+<script src="exmpl.js"></script>
+<h1>JS can change the image source</h1>
+<button type="button" onclick="document.getElementById('myimage').src='pic_bulbon.gif'">Turn on bulb</button>
+<img id="myimage" src="img\pic_bulboff.gif" style="width:100px">
+<button type="button" onclick="document.getElementById('myimage').scr='pic__bulboff.gif'">to turnoff bulb</button>
+<!---->
+<!---->
+<!---->
+<p id="demo3" style="color:red;background-color:yellow">When click the below button it will display the datee and time</p>
+<button type="button" style="color:red;background-color:blue"
+        onclick="document.getElementById('demo3').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+<!---->
+<script>
+    consol.log(5+6);
+</script>
+<!---->
+<!---->
+<h2>JAVA SCRIPT STATEMENTS</h2>
+<p>java script code blocks are written between{and}</p>
+<button type="button" onclick=MyFunction()>click me</button>
+<button type="button" onclick=MyFunction1()>clickme</button>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+function MyFunction()
+{
+document.getElementById('demo5').innerHTML="Hello Dolly!"
+}
+function MyFunction1()
+{
+document.getElementById('demo6').innerHTML="How are you?"
+}
+</script>
+</body>
+</html>
